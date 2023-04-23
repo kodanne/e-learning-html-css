@@ -1,0 +1,315 @@
+/*-----general-----*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(244, 240, 240);
+}
+
+section {
+    padding: 30px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+h2 {
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    padding: 10px 0;
+}
+
+.text-warning {
+    color: darkorange;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/*-----top-----*/
+#top {
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(images/hero.png) no-repeat center;
+    background-size: cover;
+
+    color: white;
+    text-align: center;
+
+}
+
+#top h1 {
+    padding: 30px;
+    font-size: 2em;
+}
+
+#top form button,
+#top .connexion {
+    color: white;
+    background-color: darkorange;
+    padding: 8px;
+    border: none;
+}
+
+form input {
+    padding: 8px;
+}
+
+
+.inscription,
+.savoir {
+    border: 1px solid darkorange;
+    padding: 5px;
+}
+
+
+/*-----qui nous sommes-----*/
+#qui-sommes-nous .container {
+    justify-content: center;
+    gap: 20px;
+}
+
+#qui-sommes-nous a {
+    color: black;
+    border-radius: 10px;
+}
+
+#qui-sommes-nous img {
+    width: 70%;
+}
+
+#qsn:before {
+    content: "";
+    width: 100px;
+    background: darkorange;
+    padding: 2px;
+    position: absolute;
+    top: -5px;
+    border-radius: 20px;
+}
+
+/*-----ce que nous faisons-----*/
+
+#nous-faisons p {
+    color: white;
+}
+
+#mentorat {
+    background: url(images/Rectangle\ 9.png) no-repeat center/100%;
+    padding: 30px;
+    width: 20%;
+
+}
+
+#certification {
+    background: url(images/Rectangle\ 10.png) no-repeat center/100%;
+    padding: 30px;
+    width: 20%;
+}
+
+#supports {
+    background: url(images/Rectangle\ 11.png) no-repeat center/100%;
+    padding: 30px;
+    width: 20%;
+}
+
+#conseils {
+    background: url(images/Rectangle\ 12.png) no-repeat center/100%;
+    padding: 30px;
+    width: 20%;
+}
+
+/*-----cours populaires-----*/
+#cours .container {
+    justify-content: center;
+    gap: 20px;
+}
+
+#cours h5,
+#clients h5 {
+    font-size: 18px;
+}
+
+#cours img {
+    width: 100%;
+}
+
+#cours .div {
+    background-color: white;
+
+}
+
+#cours .div .d1 {
+
+    padding: 10px;
+}
+
+#cours button {
+    padding: 10px;
+    margin: 5px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+}
+
+/*-----instructeur-----*/
+#instructeur .container {
+    justify-content: space-evenly;
+}
+
+#instructeur img {
+    width: 70%;
+}
+
+#instructeur .bloc2 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#rejoignez-nous {
+    font-weight: bold;
+}
+
+#rejoignez-nous:before {
+    content: "";
+    width: 100px;
+    background: darkorange;
+    padding: 4px;
+    position: absolute;
+    top: 0px;
+    border-radius: 20px;
+}
+
+#instructeur a {
+    color: darkorange;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+}
+
+/*-----reussite-----*/
+#reussite,
+footer {
+    background-color: black;
+    color: white;
+}
+
+i {
+    color: darkorange;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 70px;
+}
+
+#reussite .d1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#reussite .container {
+    justify-content: space-around;
+
+}
+
+#reussite h6 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*-----avis clients-----*/
+#clients .container {
+    justify-content: space-evenly;
+}
+
+
+
+#clients .bloc {
+    box-shadow: 1px 1px 3px 1px rgb(103, 103, 103);
+    border-radius: 10px;
+}
+
+/*-----footer-----*/
+footer .container {
+    justify-content: space-around;
+    padding: 20px;
+    line-height: 25px;
+}
+
+footer input {
+    width: 80%;
+    border-radius: 10px;
+}
+
+footer button {
+    width: 80%;
+    padding: 8px;
+    background: rgb(38, 28, 28);
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .navbar-brand {
+        width: 20% !important
+    }
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px !important;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        width: 20% !important
+    }
+}
