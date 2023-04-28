@@ -80,7 +80,7 @@ p {
     border: none;
 }
 
-form input {
+#top form input {
     padding: 8px;
 }
 
@@ -118,34 +118,35 @@ form input {
 }
 
 /*-----ce que nous faisons-----*/
-
+#nous-faisons .container{
+    justify-content: space-evenly;
+}
 #nous-faisons p {
     color: white;
 }
-
+.p-5{
+    padding: 40px;
+    text-align: center;
+}
 #mentorat {
     background: url(images/Rectangle\ 9.png) no-repeat center/100%;
-    padding: 30px;
-    width: 20%;
+    width: 24%;
 
 }
 
 #certification {
     background: url(images/Rectangle\ 10.png) no-repeat center/100%;
-    padding: 30px;
-    width: 20%;
+    width: 24%;
 }
 
 #supports {
     background: url(images/Rectangle\ 11.png) no-repeat center/100%;
-    padding: 30px;
-    width: 20%;
+    width: 24%;
 }
 
 #conseils {
     background: url(images/Rectangle\ 12.png) no-repeat center/100%;
-    padding: 30px;
-    width: 20%;
+    width: 24%;
 }
 
 /*-----cours populaires-----*/
@@ -259,6 +260,7 @@ i {
 #clients .bloc {
     box-shadow: 1px 1px 3px 1px rgb(103, 103, 103);
     border-radius: 10px;
+    padding: 5px;
 }
 
 /*-----footer-----*/
@@ -269,7 +271,7 @@ footer .container {
 }
 
 footer input {
-    width: 80%;
+    padding: 10px 0;
     border-radius: 10px;
 }
 
@@ -278,9 +280,16 @@ footer button {
     padding: 8px;
     background: rgb(38, 28, 28);
     color: white;
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 10px;
 }
+.f1{
+    padding: 0 5px;
+}
+.f2{
+    padding: 0 5px;
+}
+
 
 @media screen and (max-width:768px) {
     h1 {
@@ -292,7 +301,13 @@ footer button {
     }
 
     .navbar-brand {
-        width: 20% !important
+        width: 20% !important;
+    }
+    img{
+        width: 100% !important;
+    }
+    #clients img{
+        width: 50% !important;
     }
 }
 
@@ -311,5 +326,13 @@ footer button {
 
     .navbar-brand {
         width: 20% !important
+    }
+    
+    .f2{
+        
+        margin-right: 15px;
+    }
+    .f3{
+        margin-left: 35px;
     }
 }
