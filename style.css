@@ -1,4 +1,6 @@
 /*-----general-----*/
+  @import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 
 body {
     background-color: rgb(244, 240, 240);
+    font-family: 'Taviraj', serif;
 }
 
 section {
@@ -119,7 +122,8 @@ p {
 
 /*-----ce que nous faisons-----*/
 #nous-faisons .container{
-    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 #nous-faisons p {
     color: white;
@@ -303,12 +307,17 @@ footer button {
     .navbar-brand {
         width: 20% !important;
     }
-    img{
+    img, 
+    #mentorat,
+    #certification,
+    #supports,
+    #conseils{
         width: 100% !important;
     }
     #clients img{
         width: 50% !important;
     }
+
 }
 
 @media screen and (max-width:500px) {
