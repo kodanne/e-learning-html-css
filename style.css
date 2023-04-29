@@ -237,6 +237,12 @@ i {
     border: 1px solid;
     border-radius: 70px;
 }
+.fa-award{
+    padding: 30px 34px;
+}
+.fa-chalkboard-teacher{
+    padding: 30px 25px;
+}
 
 #reussite .d1 {
     display: flex;
@@ -275,12 +281,12 @@ footer .container {
 }
 
 footer input {
-    padding: 10px 0;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
 footer button {
-    width: 80%;
+    width: 71%;
     padding: 8px;
     background: rgb(38, 28, 28);
     color: white;
@@ -320,7 +326,7 @@ footer button {
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:550px) {
     h1 {
         font-size: 18px;
     }
@@ -342,6 +348,10 @@ footer button {
         margin-right: 15px;
     }
     .f3{
-        margin-left: 35px;
+        margin-left: 40px;
+    }
+    #reussite .d1:nth-child(3){
+        
+        margin-right: 30px;
     }
 }
